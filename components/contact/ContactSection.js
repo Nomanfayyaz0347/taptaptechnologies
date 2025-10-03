@@ -1,43 +1,32 @@
 
 
-import Link from 'next/link';
 import parse from 'html-react-parser';
+import InnerBanner from '../InnerBanner';
 
 export default function ContactSection({ contactData }) {
-    // Safe fallback for missing data
     const heading = contactData?.acf?.contactheading || 'Get in touch!';
     const pra = contactData?.acf?.contactpra || '';
     const us = contactData?.acf?.addressboxuk || {};
     const uk = contactData?.acf?.addressboxus || {};
     const phone = contactData?.acf?.phonebox || {};
 
+    const breadcrumbs = [
+        { label: 'Homepage', href: '/' },
+        { label: 'Contact' }
+    ];
+
     return (
         <div className="mil-content">
             <div id="swupMain" className="mil-main-transition">
-                <div className="mil-inner-banner mil-p-0-120">
-                    <div className="mil-banner-content mil-center mil-up">
-                        <div className="mil-animation-frame">
-                            <div className="mil-animation mil-position-4 mil-dark mil-scale" data-value-1="6" data-value-2="1.4"></div>
-                        </div>
-                        <div className="container">
-                                                        <ul className="mil-breadcrumbs mil-mb-60">
-                                                                <li>
-                                                                    <Link href="/" legacyBehavior>
-                                                                        <a>Homepage</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>Contact</li>
-                                                        </ul>
-                            <h1 className="mil-mb-60">{heading}</h1>
-                            <p className="mil-mb-60">{parse(pra)}</p>
-                            <a href="#contact" className="mil-link mil-dark mil-arrow-place mil-down-arrow">
-                                <span>Send message</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="mil-arrow">
-                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                <InnerBanner heading={heading} breadcrumbs={breadcrumbs} />
+                <div className="container">
+                    <p className="mil-mb-60">{parse(pra)}</p>
+                    <a href="#contact" className="mil-link mil-dark mil-arrow-place mil-down-arrow">
+                        <span>Send message</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="mil-arrow">
+                            <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
+                        </svg>
+                    </a>
                 </div>
                 <div className="mil-map-frame mil-up">
                     <div className="mil-map">

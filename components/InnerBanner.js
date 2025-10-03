@@ -7,7 +7,26 @@ export default function InnerBanner({ heading, breadcrumbs = [] }) {
     <div className="mil-inner-banner">
       <div className="mil-banner-content mil-up">
         <div className="mil-animation-frame">
-          <div className="mil-animation mil-position-4 mil-dark mil-scale" data-value-1="6" data-value-2="1.4"></div>
+          <div
+            className="mil-animation mil-position-4 mil-dark mil-scale"
+            data-value-1="6"
+            data-value-2="1.4"
+          >
+            <div className="mil-dodecahedron">
+              <div className="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+              <div className="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+              <div className="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+              <div className="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+              <div className="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+              <div className="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+              <div className="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+              <div className="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+              <div className="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+              <div className="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+              <div className="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+              <div className="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+            </div>
+          </div>
         </div>
         <div className="container">
           <ul className="mil-breadcrumbs mil-mb-60">
