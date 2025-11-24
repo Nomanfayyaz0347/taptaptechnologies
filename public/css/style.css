@@ -1,5 +1,3 @@
-/* Make logo image appear blue using CSS filter */
-
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css);
 .mil-contact-info-section {
   background: #f7f6fa;
@@ -9,7 +7,6 @@
     background: #ccc;
     padding: 20px;
 }
-
 h3.servicesiner_heading br {
     display: none;
 }
@@ -1323,9 +1320,9 @@ frame
 }
 
 .mil-frame {
-  padding: 17px 60px;
+  padding: 0 60px;
   position: fixed;
-  top: 0px;
+  top: 24px;
   left: 0;
   width: 100%;
   z-index: 2;
@@ -1333,11 +1330,8 @@ frame
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 70px;
+  height: 90px;
   background: transparent;
-  background: 0 0 no-repeat padding-box padding-box rgb(39 255 0 / 11%);
-    backdrop-filter: blur(40px);
-    transition: all .65s linear;
 }
 
 
@@ -1356,9 +1350,11 @@ frame
 @media screen and (max-width: 1200px) {
   .mil-frame .mil-frame-top {
     height: 90px;
-   
+    background-color: rgba(0, 0, 0, 0.95);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
     padding: 0 30px;
-  
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
   }
   .mil-frame .mil-frame-top .mil-logo {
     color: rgb(255, 255, 255);
@@ -4375,149 +4371,4 @@ html.is-animating .mil-menu-frame {
   opacity: 0;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
-}
-
-
-@media screen and (max-width: 480px) {
-.mil-frame {height: 60px;}
-.mil-frame .mil-frame-top {height: 60px;}
-       .mil-banner .mil-banner-content .mil-button {
-        letter-spacing: 0.5px;
-        margin-bottom: 10px;
-        padding: 8px 8px 8px 30px;
-        height: auto;
-        margin-right: 0;
-        width: 100%;
-        justify-content: space-between;
-    } .mil-banner .mil-banner-content .mil-link {
-        letter-spacing: 0.5px;
-        font-size: 12px;
-        padding: 8px 8px 8px 30px;
-        background: #211f1f;
-        border-radius: 70px;
-        width: 100%;
-        text-align: center;
-        justify-content: space-between;
-    }
-    .mil-banner {
-    height: 100%;
-}
-    .mil-banner .mil-banner-content {
-        padding-bottom: 39px;
-        padding-top: 130px;
-    }
-        .mil-preloader .mil-preloader-animation .mil-pos-abs {
-        
-        flex-direction: inherit;
-    }
-      .mil-preloader .mil-preloader-animation .mil-pos-abs .mil-h3 {
-        font-size: 22px;
-    }
-    .about-head {
-    margin-bottom: 10px;
-}
-.about-lft {
-    margin-bottom: 30px;
-}
-.services-top-pra {
-    margin-bottom: 20px;
-}
-.services-top-hea {
-    margin-bottom: 0px;
-}
-.services-button {
-    letter-spacing: 0.5px;
-    width: 100%;
-    margin: 0px !important;
-    justify-content: space-between;
-}
-.mil-mb-120.services-head {
-    margin-bottom: 30px;
-}
-.mil-services-grid .mil-service-card-sm {
-    padding: 30px 30px;
-}
-
-.mil-mb-30 {
-    margin-bottom: 10px;
-}
-p.mil-light-soft.mil-up.mil-mb-120 br {
-    display: none;
-}
-.mil-mb-120 {
-    margin-bottom: 40px;
-            text-align: left;
-}
-h2.mil-muted.mil-up.mil-mb-30 {
-    font-size: 28px;
-    text-align: left;
-}
-
-h2.mil-muted.mil-up.mil-mb-30 br {
-    display: none;
-}
-.mil-price-card {
-  
-    padding: 10px 0 10px;
-}
-    .mil-p-120-120 {
-        padding-top: 50px;
-        padding-bottom: 40px;
-    }
-.mil-blog-card .mil-post-descr {
-    padding: 0px 0px 0 0;
-}
-.mil-p-120-60 {
-        padding-top: 40px;
-        padding-bottom: 0px;
-    }
-
-.demands-boxes {
-    width: 50%;
-    margin: 0px !important;
-    padding: 0px !important;
-    border: 0px !important;
-}
-
-.demands-boxes a {
-    margin: 0;
-   min-height: 115px;
-}
-    .mil-suptitle.mil-suptitle-right {
-        text-align: left;
-    }
-    .mil-text-image {
-        display: block;
-        margin: 0;
-        height: 80px;
-        width: 100%;
-    }
-.mil-mb-120.services-head .mil-center {
-    text-align: left;
-    width: 100%;
-}
-    .swiper-slide .mil-text-xl {
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-
-
-.mil-center {
-    text-align: left;
-}
-
-.mil-mb-60 {
-    margin-bottom: 30px;
-}
-
-
-
-
-
-
-
-
-
-
 }
