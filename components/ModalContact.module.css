@@ -1,0 +1,111 @@
+.modalOverlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(30, 0, 60, 0.45);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+}
+
+
+.modalBox {
+  border-radius: 16px;
+  max-width: 100%;
+  width: 40%;
+  min-height: 80px;
+  padding: 24px 18px 18px;
+  box-shadow: 0 8px 32px 0 rgba(60, 60, 90, 0.18);
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s cubic-bezier(.4, 2, .6, 1);
+  animation: modalSlideIn 1s cubic-bezier(.4, 2, .6, 1) forwards;
+  background: 0 0 no-repeat padding-box padding-box rgb(255 255 255 / 18%);
+  backdrop-filter: blur(40px);
+}
+
+.modalBox.closing {
+  animation: modalSlideOut 1s cubic-bezier(.4,2,.6,1) forwards;
+}
+
+@keyframes modalSlideIn {
+  0% { opacity: 0; transform: translateY(-120px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes modalSlideOut {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(120px); }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #888;
+  cursor: pointer;
+}
+
+.modalHeading {
+  font-weight: 400;
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    font-family: "Outfit", sans-serif;
+    letter-spacing: 1px;
+}
+
+.modalPara {
+ color: #ffffff85;
+    font-size: 14px;
+    margin-bottom: 24px;
+    letter-spacing: 1.0px;
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.modalInput, .modalTextarea {
+  padding: 20px 20px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    font-size: 15px;
+    margin-bottom: 0px;
+    height: auto;
+}
+
+.modalTextarea {
+      height: 100px;
+}
+
+.modalSubmit {
+  background: linear-gradient(135deg, #d800ff 0%, #6e00ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 0;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.modalThankYou {
+  color: #6e00ff;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 32px 0;
+}

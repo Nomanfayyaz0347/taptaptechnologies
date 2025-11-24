@@ -1,0 +1,24 @@
+﻿
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : {"acf":{"bannersection_":{"bannerheading":"Tap Tap Technologies <br> We Design. <span 
+                    class=\"mil-thin\" style=\"font-size: 32px;\">  We Build. We Transform.<\/span> 
+                    ","bannerpra":"With TapTap Technol...
+RawContent        : HTTP/1.1 200 OK
+                    Connection: Keep-Alive
+                    Keep-Alive: timeout=5, max=100
+                    X-Robots-Tag: noindex
+                    Link: <https://taptaptechnologies.com/wp-json/>; rel="https://api.w.org/"
+                    X-Content-Type-Options: nosni...
+Forms             : {}
+Headers           : {[Connection, Keep-Alive], [Keep-Alive, timeout=5, max=100], [X-Robots-Tag, noindex], [Link, 
+                    <https://taptaptechnologies.com/wp-json/>; rel="https://api.w.org/"]...}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : System.__ComObject
+RawContentLength  : 59155
+
+
+
