@@ -4510,7 +4510,9 @@ h2.mil-muted.mil-up.mil-mb-30 br {
 .mil-mb-60 {
     margin-bottom: 30px;
 }
-
+    .mil-frame .mil-frame-top .mil-menu-btn span, .mil-frame .mil-frame-top .mil-menu-btn span:after, .mil-frame .mil-frame-top .mil-menu-btn span:before {
+        background: rgb(216 0 255);
+    }
 
 
 
